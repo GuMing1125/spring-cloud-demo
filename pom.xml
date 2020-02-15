@@ -21,6 +21,8 @@
         <module>config-client-native</module>
         <module>config-server</module>
         <module>config-client</module>
+        <module>zipkin-server</module>
+        <module>zipkin-client</module>
     </modules>
 
     <parent>
