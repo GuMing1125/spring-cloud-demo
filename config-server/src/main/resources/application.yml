@@ -1,0 +1,18 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/GuMing1125/spring-cloud-demo.git
+          search-paths: config
+          username: GuMing1125
+          password: 981125yyy
+      label: master
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: htttp://localhost:8761/eureka/

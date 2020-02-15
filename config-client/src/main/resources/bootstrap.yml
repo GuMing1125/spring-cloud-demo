@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    config:
+      name: configclient
+      # name取再github 文件夹里面 需要的配置文件名
+      label: master
+      discovery:
+        enabled: true
+        service-id: config-server
+        # 配置中心 再EurekaServer上 注册的名字
+  application:
+    name: config-servre
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
