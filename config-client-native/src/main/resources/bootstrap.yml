@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: client-config
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:8762
+      fail-fast: true #设置客户端优先判断ConfigServer获取是否正常
+
+# 通过spring.application.name 结合 spring.profiles.active 拼接目标配置文件名,
+# 再去config Server去查询相应的配置文件
